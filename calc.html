@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+</head>
+<body>
+    <h1>CALC</h1>
+    <h2>PUT TO VALUES</h2>
+    <p>NORMAL paragraph</p>
+    <!-- The last button inside a form will always have a default value "type = submit" -->
+    <!-- if you don't want to do it with function(event.preventDefault()) you can to change the "buttonType = submit" to "buttonType = button"-->
+
+    <form id="form">
+        <input id="input1" placeholder="first number" />
+        <input onchange="input_onChange()" id="input2" placeholder="second number" />
+
+        <button id="sumBtn">SUM BTN</button>
+
+        <!-- BEFORE YOU HAD TO PUT ONCLICK EVENT + ()
+        <button onclick="btnOnClick()" id="sumBtn">SUM BTN</button> -->       
+        <span></span>
+    </form>
+</body>
+<script src="./calc.js"></script>
+</html>
